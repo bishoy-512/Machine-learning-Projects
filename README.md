@@ -1,86 +1,92 @@
-# 🚢 Titanic Survival Prediction
+# 📚 Machine Learning Projects Portfolio
 
-This project is a **Machine Learning classification pipeline** built using Python to predict the survival of passengers on the Titanic dataset.  
-It includes **data preprocessing, visualization, model training, hyperparameter tuning, and evaluation**.
-
----
-
-## 📊 Dataset
-The dataset used: `train.csv` from the Titanic Kaggle competition.  
-Main columns used after preprocessing:
-- **Pclass**
-- **Sex**
-- **Fare**
-- **Embarked**
-- **Survived** (Target)
+This repository contains multiple **Machine Learning & Data Science projects** where I experimented with different techniques such as:
+- **Unsupervised Learning** → K-Means, PCA, DBSCAN, Clustering & Segmentation.
+- **Supervised Learning** → Classification (Logistic Regression, Random Forest, SVM, XGBoost, etc.) & Regression (Linear Regression, Decision Tree Regressor).
+- **Data Preprocessing & Visualization** → Handling missing values, encoding categorical features, scaling, and generating insights through plots.
 
 ---
 
-## 🛠️ Steps in the Project
+## 📊 Datasets Used
+Some of the datasets explored in this repository include:
+- **Clustering Projects**  
+  - `unsw.csv`
+  - `k-means.csv`
+  - `Country-data.csv`
+  - `segmentation_data.csv`
+  - `Mall_Customers.csv`
+  - `xclara.csv`
+  - `sales_data_sample.csv`
+  - `wine-clustering.csv`
 
-### 1️⃣ Data Exploration
-- Checked null values & dataset info.
-- Visualized important features like `Sex`, `Pclass`, and `Survived`.
-- Plotted correlation heatmap with `Survived`.
+- **Classification Projects**  
+  - `Breast_cancer_dataset.csv`
+  - `UNSW_NB15_training-set.csv`
+  - `penguins_size.csv`
+  - `Titanic.csv`
+  - `adult.csv`
 
-### 2️⃣ Data Preprocessing
-- **Numerical Columns** → Imputed missing values using mean & scaled with `StandardScaler`.
-- **Categorical Columns** → Imputed missing values using most frequent & encoded with `OneHotEncoder`.
-- Dropped irrelevant columns: `Name`, `Cabin`, `PassengerId`, `Ticket`.
-
-### 3️⃣ Model Building
-Trained multiple models using `Pipeline`:
-- Logistic Regression  
-- Decision Tree  
-- Random Forest  
-- KNN  
-- XGBoost  
-- SVM  
-
-### 4️⃣ Model Evaluation
-- Calculated **Accuracy Score** for all models.
-- Visualized model comparison with **Bar Chart**.
-- Plotted **Confusion Matrices** for all models.
-- Displayed **Classification Reports** for precision, recall, and F1-score.
-
-### 5️⃣ Hyperparameter Tuning
-- Applied `GridSearchCV` on **Random Forest** to find the best parameters:
-  - `n_estimators`
-  - `max_depth`
+- **Regression Projects**  
+  - `bengaluru_house_prices.csv`
+  - `sales_data_sample.csv` (for demand prediction)
 
 ---
 
-## 📈 Results
+## 🛠️ Techniques Covered
 
-| Model              | Accuracy (%) |
-|-------------------|-------------|
-| Logistic Regression | XX.XX |
-| Decision Tree       | XX.XX |
-| Random Forest       | XX.XX |
-| KNN                | XX.XX |
-| XGBoost            | XX.XX |
-| SVM                | XX.XX |
+### 🔢 Preprocessing
+- Missing value imputation (mean, most frequent).
+- Feature scaling (StandardScaler, MinMaxScaler).
+- One-Hot & Ordinal Encoding.
+- Handling class imbalance using **SMOTE**.
 
-_(Replace `XX.XX` with your actual results after running the notebook)_
+### 📈 Visualization
+- Correlation heatmaps.
+- Countplots & boxplots.
+- Cluster visualizations.
+- Model performance bar charts.
+- Confusion matrices & ROC curves.
+
+### 🤖 Machine Learning Models
+- **Classification:** Logistic Regression, Decision Tree, Random Forest, KNN, XGBoost, SVM.  
+- **Regression:** Linear Regression, Decision Tree Regressor.  
+- **Clustering:** K-Means, DBSCAN, PCA for dimensionality reduction.
+
+### 🎯 Model Evaluation
+- Accuracy, Precision, Recall, F1-score.
+- ROC-AUC Curve.
+- Cross-validation scores.
+- Hyperparameter tuning with GridSearchCV.
+
+---
+
+## 📈 Sample Results
+| Project         | Algorithm(s) Used        | Key Metric        |
+|----------------|----------------------|------------------|
+| Titanic Survival | Logistic Regression, Random Forest, XGBoost | ~XX% Accuracy |
+| Wine Clustering | K-Means, PCA        | Silhouette Score |
+| Bengaluru Prices | Linear Regression   | RMSE & R² Score  |
+| Breast Cancer   | SVM, Random Forest  | Precision & Recall |
+
+_(Replace XX% and metrics with actual results after running notebooks)_
 
 ---
 
 ## 🖼️ Visualizations
-- Heatmap showing correlation with survival.
-- Countplots for passenger demographics.
-- Boxplots for numeric features.
-- Model accuracy comparison bar chart.
-- Confusion matrices for all models.
+- Heatmaps and pairplots for feature analysis.
+- Clustering results with 2D visualization after PCA.
+- Model comparison bar charts.
+- Confusion Matrices & ROC curves.
 
 ---
 
 ## 🚀 How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/titanic-survival-prediction.git
+git clone https://github.com/<your-username>/ml-projects-portfolio.git
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the notebook or script
+# Open and run any notebook
 jupyter notebook
