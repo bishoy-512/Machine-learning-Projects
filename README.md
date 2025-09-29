@@ -63,12 +63,11 @@ Some of the datasets explored in this repository include:
 ## 📈 Sample Results
 | Project         | Algorithm(s) Used        | Key Metric        |
 |----------------|----------------------|------------------|
-| Titanic Survival | Logistic Regression, Random Forest, XGBoost | ~XX% Accuracy |
+| Titanic Survival | Logistic Regression, Random Forest, XGBoost | 84% Accuracy |
 | Wine Clustering | K-Means, PCA        | Silhouette Score |
 | Bengaluru Prices | Linear Regression   | RMSE & R² Score  |
 | Breast Cancer   | SVM, Random Forest  | Precision & Recall |
 
-_(Replace XX% and metrics with actual results after running notebooks)_
 
 ---
 
