@@ -7,7 +7,9 @@ st.set_page_config(page_title="Titanic Survival Prediction")
 st.title("🚢 Titanic Survival Prediction")
 
 # Load model
-with open("model.pkl", "rb") as f:
+import os
+model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
+with open(model_path, "rb") as f:
     model = pickle.load(f)
 
 st.subheader("Passenger Information")
@@ -33,3 +35,4 @@ if st.button("Predict Survival"):
         st.success(f"Passenger is likely to SURVIVE ✅ (Probability: {probability:.2f})")
     else:
         st.error(f"Passenger is NOT likely to survive ❌ (Probability: {probability:.2f})")
+
